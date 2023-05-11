@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+import hidden_4 as h
+
 if __name__ == "__main__":
-    import hidden_4
-    for s in dir(hidden_4):
-        if s[:2] != "__":
-            print("{:s}".format(s))
+    names = dir(h)
+    i = 0
+
+while i < len(names):
+    if names[i][:2] != '__':
+        print(names[i])
+    i += 1
